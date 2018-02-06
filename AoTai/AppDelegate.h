@@ -11,7 +11,11 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+//@property(nonatomic,strong)  NSString *deviceToken;
 
+//@property(nonatomic,strong) pushModel *model;
+
+//@property(nonatomic,strong) NSDictionary *userInfo;
 
 @end
 

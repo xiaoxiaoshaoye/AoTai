@@ -15,6 +15,9 @@
 		0A5EF2FA20294173006E19BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5EF2F920294173006E19BF /* main.m */; };
 		0A5EF30420294173006E19BF /* AoTaiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5EF30320294173006E19BF /* AoTaiTests.m */; };
 		0A5EF30F20294173006E19BF /* AoTaiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5EF30E20294173006E19BF /* AoTaiUITests.m */; };
+		0A5EF31E20294272006E19BF /* Localsize.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A5EF32020294272006E19BF /* Localsize.strings */; };
+		0A5EF32820294E55006E19BF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5EF32720294E55006E19BF /* AudioToolbox.framework */; };
+		0A5EF32A20294E5E006E19BF /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5EF32920294E5E006E19BF /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,14 @@
 		0A5EF30A20294173006E19BF /* AoTaiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AoTaiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5EF30E20294173006E19BF /* AoTaiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AoTaiUITests.m; sourceTree = "<group>"; };
 		0A5EF31020294173006E19BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A5EF32120294284006E19BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localsize.strings; sourceTree = "<group>"; };
+		0A5EF322202942D1006E19BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localsize.strings; sourceTree = "<group>"; };
+		0A5EF3232029430F006E19BF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		0A5EF3242029430F006E19BF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		0A5EF3252029430F006E19BF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localsize.strings"; sourceTree = "<group>"; };
+		0A5EF32720294E55006E19BF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0A5EF32920294E5E006E19BF /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		0A5EF32B20294F91006E19BF /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A5EF32A20294E5E006E19BF /* JavaScriptCore.framework in Frameworks */,
+				0A5EF32820294E55006E19BF /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +94,12 @@
 		0A5EF2DE20294173006E19BF = {
 			isa = PBXGroup;
 			children = (
+				0A5EF32020294272006E19BF /* Localsize.strings */,
 				0A5EF2E920294173006E19BF /* AoTai */,
 				0A5EF30220294173006E19BF /* AoTaiTests */,
 				0A5EF30D20294173006E19BF /* AoTaiUITests */,
 				0A5EF2E820294173006E19BF /* Products */,
+				0A5EF32620294E54006E19BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +120,7 @@
 				0A5EF2EB20294173006E19BF /* AppDelegate.m */,
 				0A5EF2ED20294173006E19BF /* ViewController.h */,
 				0A5EF2EE20294173006E19BF /* ViewController.m */,
+				0A5EF32B20294F91006E19BF /* PrefixHeader.h */,
 				0A5EF2F020294173006E19BF /* Main.storyboard */,
 				0A5EF2F320294173006E19BF /* Assets.xcassets */,
 				0A5EF2F520294173006E19BF /* LaunchScreen.storyboard */,
@@ -130,6 +146,15 @@
 				0A5EF31020294173006E19BF /* Info.plist */,
 			);
 			path = AoTaiUITests;
+			sourceTree = "<group>";
+		};
+		0A5EF32620294E54006E19BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A5EF32920294E5E006E19BF /* JavaScriptCore.framework */,
+				0A5EF32720294E55006E19BF /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +245,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 0A5EF2DE20294173006E19BF;
 			productRefGroup = 0A5EF2E820294173006E19BF /* Products */;
@@ -241,6 +267,7 @@
 				0A5EF2F720294173006E19BF /* LaunchScreen.storyboard in Resources */,
 				0A5EF2F420294173006E19BF /* Assets.xcassets in Resources */,
 				0A5EF2F220294173006E19BF /* Main.storyboard in Resources */,
+				0A5EF31E20294272006E19BF /* Localsize.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +334,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0A5EF2F120294173006E19BF /* Base */,
+				0A5EF3232029430F006E19BF /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -315,8 +343,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				0A5EF2F620294173006E19BF /* Base */,
+				0A5EF3242029430F006E19BF /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0A5EF32020294272006E19BF /* Localsize.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A5EF32120294284006E19BF /* Base */,
+				0A5EF322202942D1006E19BF /* en */,
+				0A5EF3252029430F006E19BF /* zh-Hans */,
+			);
+			name = Localsize.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -326,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -381,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -430,11 +471,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M75Y93FZP3;
 				INFOPLIST_FILE = AoTai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yunengzhe.AoTai;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunengzhe.AoTai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -444,11 +487,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M75Y93FZP3;
 				INFOPLIST_FILE = AoTai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yunengzhe.AoTai;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunengzhe.AoTai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
